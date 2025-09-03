@@ -150,3 +150,31 @@
   }
 }
 
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.about {
+  position: relative;
+  background: var(--bg-secondary);
+  padding-bottom: 3rem;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;             
+  height: 2px;             
+  background: var(--accent-primary); 
+  border-radius: 2px;
+}

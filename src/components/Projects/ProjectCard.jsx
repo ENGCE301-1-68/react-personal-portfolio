@@ -1,6 +1,7 @@
 // src/components/Projects/ProjectCard.jsx
 import React from 'react';
-import './Projects.css'; // ใช้ CSS ไฟล์เดิม
+import './Projects.css'; 
+
 
 const ProjectCard = ({ project }) => {
   return (

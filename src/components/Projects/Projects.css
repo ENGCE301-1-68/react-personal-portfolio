@@ -1,9 +1,7 @@
-/* src/components/Projects/Projects.css */
-
-/* ===== Section ===== */
 .projects.section {
   padding: 60px 0;
-  background-color: #f9f9f9;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .section-title {
@@ -16,7 +14,7 @@
 .section-subtitle {
   text-align: center;
   font-size: 1rem;
-  color: #666;
+  color: var(--text-secondary);
   margin-bottom: 40px;
 }
 
@@ -30,9 +28,9 @@
   display: inline-block;
   padding: 8px 16px;
   margin: 0 6px;
-  border: 1px solid #007bff;
+  border: 1px solid var(--accent-primary);
   background-color: transparent;
-  color: #007bff;
+  color: var(--accent-primary);
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -40,8 +38,8 @@
 
 .filter-btn:hover,
 .filter-btn.active {
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
 }
 
 /* ===== Projects Grid ===== */
@@ -53,16 +51,16 @@
 
 /* ===== Project Card ===== */
 .project-card {
-  background-color: #fff;
+  background-color: var(--bg-primary);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: var(--shadow-lg);
 }
 
 .project-image {
@@ -83,13 +81,13 @@
 
 .project-description {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 12px;
 }
 
 .project-link {
   text-decoration: none;
-  color: #007bff;
+  color: var(--accent-primary);
   font-weight: 500;
 }
 
@@ -102,9 +100,9 @@
   grid-column: 1/-1;
   text-align: center;
   padding: 30px;
-  border: 2px dashed #ccc;
+  border: 2px dashed var(--border-color);
   border-radius: 10px;
-  color: #999;
+  color: var(--text-tertiary);
   font-style: italic;
 }
 
@@ -122,4 +120,21 @@
     height: 150px;
   }
 }
+.projects.section {
+  position: relative;
+  padding: 60px 0;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
 
+.projects.section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 2px;
+}
