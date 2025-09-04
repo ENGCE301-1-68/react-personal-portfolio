@@ -1,5 +1,14 @@
+// src/data/portfolioData.js
+
 // ===== Category List =====
 export const categories = ["All", "AI", "Web", "Mobile"];
+
+// ===== Import Images =====
+import PlantAI from '../assets/Plant_ai.png';
+import WeatherApp from '../assets/Weather-app.png';
+import TodoList from '../assets/To_do_list.png';
+import Chatbot from '../assets/Chatbot.png';
+import MobileFinance from '../assets/Mobile_Finance_Tracker.png';
 
 // ===== Projects Data =====
 const portfolioData = [
@@ -9,7 +18,7 @@ const portfolioData = [
     category: "AI",
     description:
       "โมเดล Deep Learning สำหรับจำแนกเสียงพืช (Dry / Water) โดยใช้ CNN + Spectrogram",
-    image: "/src/assets/ images/plant_ai.png",
+    image: PlantAI,
     view: "https://huggingface.co/spaces/NonSittinon/plant_sounds_cnn_ai",
   },
   {
@@ -18,7 +27,7 @@ const portfolioData = [
     category: "Web",
     description:
       "เว็บแอปแสดงสภาพอากาศแบบเรียลไทม์ พร้อมระบบพยากรณ์อากาศล่วงหน้า 5 วัน",
-    image: "src/assets/ images/weather-app.png",
+    image: WeatherApp,
     view: "https://my-weather-app-part1.netlify.app/",
   },
   {
@@ -27,7 +36,7 @@ const portfolioData = [
     category: "Web",
     description:
       "เว็บไซต์ ช่วยจัดการรายการสิ่งที่ต้องทำ (To-Do) UI เรียบง่าย, แก้ไขรายการ inline, โครงสร้าง Component ชัดเจน",
-    image: "src/assets/ images/To_do_list.png",
+    image: TodoList,
     view: "https://verdant-kashata-9af56b.netlify.app/",
   },
   {
@@ -36,7 +45,7 @@ const portfolioData = [
     category: "AI",
     description:
       "แชทบอท NLP สำหรับตอบคำถามทั่วไป พัฒนาโดยใช้ PyTorch และ Transformers",
-    image: "src/assets/ images/chatbot.png",
+    image: Chatbot,
     view: "https://github.com/username/ai-chatbot",
   },
   {
@@ -45,12 +54,13 @@ const portfolioData = [
     category: "Mobile",
     description:
       "แอปพลิเคชันติดตามรายรับรายจ่ายบนมือถือ พัฒนาโดยใช้ React Native",
-    image: "src/assets/ images/Mobile Finance Tracker.png",
+    image: MobileFinance,
     view: "https://github.com/username/mobile-finance-tracker",
   },
 ];
 
 export default portfolioData;
+
 
 // ===== Contact Information =====
 export const contactInfo = {

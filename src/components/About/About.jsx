@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Code, Palette, Zap, Heart } from 'lucide-react';
 import './About.css';
+import profileImg from '../../assets/profile1.png';
 
 function About() {
   const skills = [
@@ -75,11 +76,11 @@ function About() {
 
           {/* รูปโปรไฟล์ */}
           <div className="about-image">
-            <img 
-              src="/src/assets/profile1.png"   
-              alt="Profile" 
-              className="profile-img"
-            />
+          <img 
+            src={profileImg}   
+            alt="Profile" 
+            className="profile-img"
+          />
           </div>
         </div>
       </div>
